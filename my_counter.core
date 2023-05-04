@@ -1,0 +1,21 @@
+CAPI=2:
+name: ::my_counter
+description: A simple 4-bit counter
+
+filesets:
+  fs_rtl:
+    files:
+      - counter.v
+    file_type: verilogSource
+  fs_tb:
+    files:
+      - testbench.cpp
+    file_type: cppSource
+
+targets:
+  sim:
+    default_tool: verilator
+    filesets:
+      - fs_rtl
+      - fs_tb
+    toplevel: adder_4bit

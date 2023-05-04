@@ -1,0 +1,6 @@
+--Mdir .
+--cc
+../src/my_counter_0/counter.v
+--top-module adder_4bit
+--exe
+../src/my_counter_0/testbench.cpp

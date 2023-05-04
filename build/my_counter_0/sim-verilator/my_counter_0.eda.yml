@@ -1,0 +1,17 @@
+dependencies:
+  ::my_counter:0: []
+files:
+- core: ::my_counter:0
+  file_type: verilogSource
+  name: ../src/my_counter_0/counter.v
+- core: ::my_counter:0
+  file_type: cppSource
+  name: ../src/my_counter_0/testbench.cpp
+hooks: {}
+name: my_counter_0
+parameters: {}
+tool_options:
+  verilator: {}
+toplevel: adder_4bit
+version: 0.2.1
+vpi: []
